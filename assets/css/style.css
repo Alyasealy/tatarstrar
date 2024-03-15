@@ -1,0 +1,735 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500&display=swap');
+
+:root {
+    --font-family: 'Unbounded', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul,
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: var(--font-family);
+    transition: 0.3s ease-in-out;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+
+.header-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 55px;
+}
+
+.header-logo a {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.header-logo img {
+    max-width: 30px;
+    align-items: center;
+}
+
+.header-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 69px;
+}
+
+.header-nav {
+    display: flex;
+
+    gap: 55px;
+
+    color: #2d2d2d;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.header-nav a {
+    transition: all 0.3s ease-in-out;
+}
+
+.header-nav a:hover {
+    color: #586349;
+}
+
+.header-icon {
+    display: flex;
+
+}
+
+.header {
+    margin: 0 180px;
+}
+
+.header-icons i {
+    cursor: pointer;
+}
+
+.fa-solid.fa-bars {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.banner {
+    background: url(../img/banner/banner.jpg) no-repeat;
+
+    width: 100%;
+    height: 100vh;
+    background-size: 100%;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    height: 100%;
+    padding-left: 400px;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding-bottom: 100px;
+}
+
+.banner-text h3 {
+    font-weight: 300;
+    font-size: 120px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.banner-text h3 span {
+    font-weight: 300;
+    font-size: 120px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-left: 160px;
+    text-align: right;
+}
+
+
+.banner-text h2 {
+    font-weight: 400;
+    font-size: 64px;
+    color: #283618;
+}
+
+.banner-text button {
+    outline: none;
+    background-color: white;
+    box-shadow: 6px 7px 0px 2px #283618;
+    border-radius: 16px;
+    font-weight: 450px;
+    font-size: 28px;
+    color: #283618;
+    margin-left: 160px;
+    text-align: right;
+    padding: 15px 40px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.banner-text button:hover {
+    border: 2px solid transparent;
+    background-color: #283618;
+    color: #fff;
+    box-shadow: 6px 7px 0px 2px #fff;
+}
+
+.container h1 {
+    margin-top: 120px;
+
+    font-weight: 500;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #283618;
+
+    text-align: center;
+}
+
+.populars-cards__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 44px;
+
+    margin: 100px 0;
+}
+
+.fa-solid.fa-arrow-left,
+.fa-solid.fa-arrow-right {
+    font-size: 48px;
+    cursor: pointer;
+}
+
+.popular-content h3 {
+    font-weight: 300;
+    margin-top: 40px;
+    font-size: 35px;
+}
+
+.populars-card img {
+    width: 100%;
+    height: 525px;
+    object-fit: cover;
+}
+
+.kateg button {
+    text-align: center;
+    height: 68px;
+    width: 1250px;
+    font-size: 35px;
+    --font-family: 'Unbounded', sans-serif;
+    background-color: transparent;
+}
+
+.kateg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.populars-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    color: #000;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.populars-content:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.populars-content p {
+    width: 250px;
+    text-align: left;
+}
+
+.populars-content .price {
+    text-align: right;
+    padding-top: 10px;
+    font-weight: 100;
+}
+
+.categories-wrapper {
+    background-color: #E2DED9;
+    padding: 120px 0;
+}
+
+.categories-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 21px;
+
+    margin-top: 70px;
+}
+
+.categories-card {
+    position: relative;
+}
+
+.categories-card img {
+    width: 100%;
+
+    filter: brightness(50%);
+}
+
+.categories-card .categories-card__content {
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    gap: 14px;
+
+    margin: 0 0 23px 26px;
+}
+
+.pop img:hover{
+    transform: scale(1.1);
+    transition: 1.4s;
+}
+
+.kateg button:hover{
+    background-color: #283618;
+    color: white;
+    transition: 1.4s;
+}
+
+
+.categories-card .categories-card__content h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.categories-card__content .fa-solid.fa-arrow-right {
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.categories-card__content:hover .fa-solid.fa-arrow-right {
+    margin-left: 10px;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    gap: 67px;
+
+    margin: 40px 0 108px 0;
+}
+
+.footer-colum:first-child {
+    width: 340px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    gap: 35px;
+}
+
+.footer-colum:first-child img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer-colum:first-child .fa-brands.fa-telegram,
+.fa-brands.fa-youtube,
+.fa-brands.fa-vk {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.footer-colum:first-child .footer-copyright {
+    font-size: 20px;
+    font-weight: 300;
+    color: #586349;
+}
+
+.footer-wrapper hr {
+    background-color: #646464;
+}
+
+.footer-nav {
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 25px;
+    padding-top: 160px;
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.footers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 600px;
+}
+
+.footers li a {
+    font-size: 20px;
+}
+
+.ft {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.ft .forma form {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.forma input {
+    width: 360px;
+    height: 50px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #D9D9D9;
+    text-align: left;
+}
+
+.formas {
+    display: flex;
+    flex-direction: row;
+
+}
+
+form .tlf {
+    height: 65px;
+}
+
+form button {
+    width: 150px;
+    height: 40px;
+    background-color: #283618;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.ft img {
+    height: 180px;
+    padding-top: 40px;
+}
+
+.forma p {
+    font-size: 20px;
+    text-align: left;
+    align-items: left;
+}
+
+.ft .text p {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    text-align: right;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.footer-colum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.footer-colum nav {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.kateg {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+
+}
+
+
+.footers a {
+    font-size: 27px;
+    padding: 0 20px;
+}
+
+.populars-content {
+    text-align: center;
+    align-items: center;
+}
+
+
+@media (max-width: 1440px) {
+    .container {
+        margin: 0 48px;
+    }
+
+    .banner {
+        height: 80vh;
+    }
+
+    .banner-content {
+        height: 60%;
+    }
+
+    .banner-text h3 {
+        font-size: 24px;
+    }
+
+    .banner-text h2 {
+        font-size: 32px;
+    }
+
+    .banner-text button {
+        padding: 10px 20px;
+    }
+
+    .banner-text {
+        gap: 24px;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+
+    .container {
+        max-width: 50vh;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+    }
+
+    .header{
+        width: 20vh;
+    }
+
+    .header-logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .header-logo a {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
+    .header-logo img {
+        max-width: 30px;
+        align-items: center;
+    }
+
+    .header-ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        height: 69px;
+    }
+
+    .header-nav {
+        display: flex;
+        max-width: 30vh;
+        gap: 10px;
+
+        color: #2d2d2d;
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    .banner {
+        background: url(../img/banner/banner.jpg) no-repeat;
+
+        width: 100vh;
+        height: auto;
+        background-size: 100%;
+    }
+
+
+
+    .container .konec .lar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+        gap: 20px;
+        font-size: 20px;
+        padding-left: 220px;
+    }
+    .lar img{
+        max-width: 40vh;
+        padding-left: 20px;
+    }
+
+    h5{
+        padding-left: 270px;
+        font-size: 20px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    .lar .perv{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 35px;
+        padding-top: 30px;
+    }
+    
+    .lar .vt{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 30px;
+        padding-top: 30px; 
+    }
+
+    .lar .vt .cena{
+        padding-bottom: 45px;
+    }
+.konec .stp{
+    padding-top: 30px;
+}
+
+.konec button{
+    border: 1px solid black;
+    background-color: transparent;
+color: #283618;
+padding: 10px 170px;
+margin-top: 30px;
+margin-left: 100px;
+}
+
+.lar h3{
+    font-weight: 300;
+}
+    .banner-content {
+      max-width: 400px;
+    }
+
+    .banner-text h3 {
+        font-weight: 300;
+        font-size: 70px;
+        padding-top: 40px;
+        color: #ffffff;
+        text-transform: uppercase;
+        text-align: left;
+    }
+
+    .banner-text h3 span {
+        font-weight: 300;
+        font-size: 70px;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-left: 70px;
+        text-align: right;
+    }
+
+
+    .banner-text h2 {
+        font-weight: 400;
+        font-size: 64px;
+        color: #283618;
+    }
+
+    .banner-text button {
+        outline: none;
+        background-color: white;
+        box-shadow: 6px 7px 0px 2px #283618;
+        border-radius: 16px;
+        font-weight: 450px;
+        font-size: 25px;
+        color: #283618;
+        margin-left: 60px;
+        text-align: right;
+        padding: 15px 40px;
+        margin-bottom: 40px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+
+
+.container h1{
+    font-size: 25px;
+    padding-bottom: 40px;
+    padding-left: 250px;
+}
+main{
+    text-align: center;
+    align-items: center;
+}
+    .populars-cards__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .populars-cards__wrapper{
+        max-width: 60vh;
+        display: flex;
+        flex-direction: column;
+        padding-left: 300px;
+    }
+
+    .populars-card{
+        width: 25vh;
+    }
+
+    .populars-card img{
+        max-height: 50vh;
+        width: auto;
+        gap: 10px;
+    }
+ 
+    
+    .kateg button{
+        font-size: 20px;
+        margin-left: 350px;
+        padding: 0 150px ;
+    }
+
+    .footers{
+        display: flex;
+        padding-left: 300px;
+    }
+}

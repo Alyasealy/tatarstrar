@@ -1,0 +1,885 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500&display=swap');
+
+:root {
+    --font-family: 'Unbounded', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    align-items: center;
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul, li {
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+} 
+
+body {
+    font-family: var(--font-family);
+    transition: 0.3s ease-in-out;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+
+.header-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 55px;
+}
+
+.header-logo a{
+     font-size: 20px;
+     margin-top: 5px;
+}
+
+.header-logo img{
+    max-width: 30px;
+    align-items: center;
+}
+
+.header-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 69px;
+}
+
+.header-nav {
+    display: flex;
+
+    gap: 55px;
+
+    color: #2d2d2d;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.header-nav a {
+    transition: all 0.3s ease-in-out;
+}
+
+.header-nav a:hover {
+    color: #586349;
+}
+
+.header-icon {
+    display: flex;
+
+}
+
+.header-icons i {
+    cursor: pointer;
+}
+
+.fa-solid.fa-bars {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+form input{
+    width: 1100px;
+    height: 50px;
+    border-radius: 12px;
+    background-color: #E3DCDC;
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+.sort{
+    display: flex;
+    flex-direction: column;
+}
+
+.sort h3{
+    text-align: left;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.sorti{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 30px;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.container h1{
+    margin-bottom: 50px;
+    font-size: 50px;
+    
+    font-weight: 200;
+}
+
+.sorti .inp{
+    margin: 10px;
+    
+}
+
+
+
+
+
+
+.kategoria{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.fa-solid.fa-arrow-left,
+.fa-solid.fa-arrow-right {
+font-size: 48px;
+cursor: pointer;
+}
+
+.popular-content h3{
+font-weight: 300;
+margin-top: 40px;
+font-size: 35px;
+}
+
+.popularss{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.price h3{
+    font-weight: 200;
+}
+
+.populars-card img {
+width: 300px;
+height: 400px;
+object-fit: cover;
+display: flex;
+flex-direction: row;
+}
+
+.kateg button{
+text-align: center;
+height: 68px;
+width: 1250px;
+font-size: 35px;
+--font-family:'Unbounded', sans-serif ;
+background-color: transparent;
+}
+
+.price button:hover{
+    background-color: white;
+    color: #283618;
+    border: 1 solid black;
+
+transition: 1.4s;}
+
+.kateg{
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+
+
+.populars-content {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+text-align: center;
+flex-wrap: wrap;
+margin-top: 24px;
+color: #000;
+font-size: 25px;
+}
+
+.populars-content p{
+width: 300px;
+text-align: left;
+
+}
+
+.korzz button:hover{
+    background-color: white;
+    color: #283618;
+    border: 1 solid black;
+    transition: 1.4s;
+    cursor: pointer;
+}
+
+.populars-content .price{
+display: flex;
+flex-direction: row;
+font-weight: 100;
+align-items: center;
+text-align: center;
+width: 300px;
+font-size: 20px;
+justify-content: space-between;
+padding: 20px 0;
+
+}
+
+.price button{
+    color: white;
+    background-color: #283618;
+    width: 130px;
+    height: 40px;
+    font-size: 20px;
+    align-items: center;
+text-align: center;
+}
+
+.categories-wrapper {
+background-color: #E2DED9;
+padding: 120px 0;
+}
+
+.categories-cards {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+
+gap: 21px;
+
+margin-top: 70px;
+}
+
+.categories-card {
+position: relative;
+}
+
+.categories-card img{
+width: 100%;
+
+filter: brightness(50%);
+}
+
+.categories-card .categories-card__content {
+position: absolute;
+bottom: 0;
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+gap: 14px;
+
+margin: 0 0 23px 26px;
+}
+
+.categories-card .categories-card__content h2 {
+font-size: 20px;
+font-weight: 500;
+color: #fff;
+cursor: pointer;
+transition: all 0.3s ease-in-out;
+}
+
+.categories-card__content .fa-solid.fa-arrow-right {
+font-size: 18px;
+color: #fff;
+cursor: pointer;
+transition: all 0.3s ease-in-out;
+}
+
+.categories-card__content:hover .fa-solid.fa-arrow-right {
+margin-left: 10px;
+}
+
+
+
+
+
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    gap: 67px;
+
+    margin: 40px 0 108px 0;
+}
+
+.footer-colum:first-child {
+    width: 340px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    gap: 35px;
+}
+
+.footer-colum:first-child img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer-colum:first-child .fa-brands.fa-telegram, .fa-brands.fa-youtube, .fa-brands.fa-vk {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.footer-colum:first-child .footer-copyright {
+    font-size: 20px;
+    font-weight: 300;
+    color: #586349;
+}
+
+.footer-wrapper hr {
+    background-color: #646464;
+}
+
+.footer-nav{
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 25px;
+    padding-top: 160px;
+    gap: 40px;
+    align-items: center;
+text-align: center;
+padding-bottom: 50px;
+}
+
+.footers{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 600px;
+}
+
+.ft{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.ft .forma form{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.forma input{
+    width: 360px;
+    height: 50px;
+   margin: 10px 0;
+   border-radius: 5px;
+   font-size: 18px;
+   padding: 10px;
+   background-color: #D9D9D9;
+   text-align: left;
+}
+
+.formas{
+    display: flex;
+    flex-direction: row;
+
+}
+
+form .tlf{
+    height: 65px;
+}
+
+form button{
+    width: 150px;
+    height: 40px;
+    background-color: #283618;
+color: white;
+font-size: 18px;
+border-radius: 5px;
+}
+
+.ft img{
+    height: 180px;
+    padding-top: 40px;
+}
+
+.footers li a{
+    font-size: 20px;
+}
+
+.forma p{
+    font-size: 20px;
+    text-align: left;
+    align-items: left;
+}
+
+.ft .text p{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    text-align: right;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.footer-colum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.footer-colum nav {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.kateg{
+display:flex ;
+flex-direction: row;
+    text-align: center;
+    align-items: center;
+    
+}
+
+
+.footers a{
+    font-size: 27px;
+    padding: 0 20px;
+}
+
+.populars-content{
+    text-align: center;
+    align-items: center;
+}
+
+
+
+
+/* 
+карточка товара  */
+
+.dve{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ padding-top: 40px;
+}
+
+.dve .photo{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.photo img{
+    width: 520px;
+}
+
+.photo .goriz{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.goriz img{
+    width: 250px;
+}
+
+.txtt{
+    width: 500px;
+    text-align: left;
+    font-weight: 400;
+}
+
+.txtt h3{
+    font-size: 25px;
+    font-weight: 400;
+    padding-bottom: 50px;
+}
+
+.txtt p{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.txtt h4{
+    font-weight: 300;
+    font-size: 20px;
+    padding: 23px 0;
+}
+
+.dve .dp{
+    margin: 25px 0;
+}
+
+.serc{
+    background-color: transparent;
+    border: transparent;
+    max-width: 34px;
+
+}
+
+.vmest{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    gap: 40px;
+    padding-top: 70px;
+}
+
+.korzz{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.serc img{
+    text-align: center;
+align-items: center;
+
+}
+
+.korz{
+    background-color: #586349;
+    width: 360px;
+    height: 46px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+}
+
+section h2{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: left;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.otz{
+    text-align: left;
+    padding-top: 60px;
+}
+
+.otz .ot{
+    text-align: left;
+    padding: 20px 0;
+}
+
+
+
+
+@media (max-width: 400px) {
+
+
+
+    .header{
+        width: 20vh;
+    }
+
+    .header-logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .header-logo a {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
+    .header-logo img {
+        max-width: 30px;
+        align-items: center;
+    }
+
+    .header-ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        height: 69px;
+    }
+
+    .header-nav {
+        display: flex;
+        max-width: 30vh;
+        gap: 10px;
+
+        color: #2d2d2d;
+        font-weight: 400;
+        font-size: 10px;
+    }
+
+    .container h1{
+        font-size: 15px;
+    }
+
+
+
+    .container h3{
+        font-size: 20px;
+    }
+
+    .sorti{
+        display: flex;
+        flex-direction: row;
+        font-size: 8px;
+        padding: 10px;
+      
+padding-right: 350px;
+    }
+    .sorti .inp{
+        font-size: 20px;
+        width: 200px;
+    }
+
+    .popularss{
+        max-width: 60vh;
+        padding-left: 150px;
+    }
+
+    .populars-content p{
+        font-size: 20px;
+        padding-left: 60px;
+    }
+
+    form input{
+        width: 40vh;
+        padding-left: -100px;
+        
+    }
+.sort h3{
+    font-size:20px;
+    width: 300px;
+}
+
+.katt{
+    padding-right: 600px;
+}
+    .footers{
+        display: flex;
+
+    }
+    .footer-nav{
+        width: 70vh;
+    }
+
+    .populars-card img{
+        max-width: 40vh;
+        padding-left: 80px;
+    }
+    .popularss{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .forma p{
+        font-size: 10px;
+    }
+    
+
+ 
+.ft{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 60px;
+}
+
+.ft .forma form{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.forma input{
+    width: 100px;
+    height: 30px;
+   margin: 10px 0;
+   border-radius: 5px;
+   font-size: 10px;
+   padding: 8px;
+   background-color: #D9D9D9;
+   text-align: left;
+}
+
+.formas{
+    display: flex;
+    flex-direction: row;
+padding-left: 100px;
+}
+
+form .tlf{
+    height: 35px;
+}
+
+form button{
+    width: 100px;
+    height: 40px;
+    background-color: #283618;
+color: white;
+font-size: 13px;
+border-radius: 5px;
+}
+
+.ft img{
+    height: 100px;
+    padding-top: 40px;
+}
+
+.footers li a{
+    font-size: 20px;
+    padding-left: 60px;
+}
+
+.forma p{
+    font-size: 20px;
+    text-align: left;
+    align-items: left;
+}
+
+.ft .text p{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    text-align: right;
+    font-size: 15px;
+    padding-top: 10px;
+}
+   
+section h2{
+    font-size: 15px;
+}
+
+.dve .photo{
+    display: flex;
+    flex-direction: column;
+    width: 10vh;
+}
+
+.photo img{
+    width: 32vh;
+    padding-left: 10vh;
+}
+
+.photo .goriz{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1px;
+
+}
+
+.goriz img{
+    width: 20vh;
+}
+
+.txtt{
+    width: 50vh;
+    text-align: left;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.txtt .gh{
+    padding-top: 190px;
+}
+
+.txtt h3{
+    font-size: 10px;
+    font-weight: 400;
+
+    padding-left: 200px;
+}
+
+.txtt p{
+    font-size: 10px;
+    padding-bottom: 10px;
+}
+
+.txtt h4{
+    font-weight: 300;
+    font-size: 10px;
+    padding: 23px 0;
+}
+
+.dve .dp{
+    margin: 25px 0;
+}
+
+.txtt img{
+    max-width: 20vh;
+}
+
+.serc{
+    background-color: transparent;
+    border: transparent;
+    max-width: 34px;
+
+
+}
+
+.populars-content .price{
+    padding-left: 60px;
+}
+
+.txtt .korzz .korz{
+width: 25vh;
+}
+
+.otz h3{
+
+    font-size: 15px;
+}
+
+.ot h4, p{
+    font-size: 8px;
+}
+
+.otz .ot{
+    text-align: left;
+    padding: 20px 0;
+}
+
+
+
+.dp{
+    padding-top: 10px;
+}
+
+}
